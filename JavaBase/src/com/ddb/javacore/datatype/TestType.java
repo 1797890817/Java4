@@ -37,14 +37,14 @@ public class TestType {
 		// num =36; //再次给常量赋值则不允许的！
 		// System.out.println("change num is :" + num);
 		
-		//基本数据类型转换，大转小需要强制转换
+		//基本数据类型转换，大int转小short需要强制转换
 		short price;
 		price = (short) money;
 		
 		System.out.println("price is : " + price);
 		
 		short price2 = (short)236;
-		//基本数据类型转换，小转大，直接自动转换
+		//基本数据类型转换，小short转大long，直接自动转换
 		long testlong;
 		testlong = price2;
 		System.out.println("testlong is :" + testlong);
