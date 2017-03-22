@@ -13,7 +13,7 @@ public class BranchIfDemo2 {
 		
 		int country = 1;
 		int privince = 2;
-		if (country ==1) {
+		/*if (country ==1) {
 			System.out.println("你是中国人！");
 			
 			if(privince ==2 ){
@@ -25,8 +25,18 @@ public class BranchIfDemo2 {
 			
 		} else {
 			System.out.println("你是外国人！");
-		}
+		}*/
 
+		//int result = 4 >5 ? (1+2) : (2-1);
+		System.out.println("原 country : " +country);
+		System.out.println("原 privince : " +privince);
+		//int result = 4>5 ? country++ : privince++;
+		int result = 5>3 ? country++ : privince++;
+		System.out.println("result ： " +result);
+		System.out.println("后 country : " +country);
+		System.out.println("后 privince : " +privince);
+		
+		
 		
 	}
 

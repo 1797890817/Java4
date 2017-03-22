@@ -1,5 +1,6 @@
 package com.ddb.javacore.branch;
 
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class LoopDemo2 {
@@ -67,12 +68,23 @@ public class LoopDemo2 {
 		}
 	}
 
+	public static void forMutiV(){
+		PrintStream out = System.out;
+		out.println("For muti-v demo: ");
+		//for (int i = 1,j=9; (i <= 9)&&(j<=9); i++,j--) {
+		for (int i = 1,j=20; i <= 9; i++,j-=2) {
+			out.print(j+ " * "+ i +" = " + i * j + "\t");
+		}
+		out.println(); 
+	}
+	
+	
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+		/*Scanner input = new Scanner(System.in);
 		System.out.println("请输入一个数：");
 		int num = input.nextInt();
 		// for loop
-		forDemo2(num);
+		forDemo2(num);*/
 
 		/*
 		 * // while loop whileDemo(num);
@@ -81,6 +93,8 @@ public class LoopDemo2 {
 		 * 
 		 * // foreach loop forEachDemo();
 		 */
+		
+		forMutiV();
 	}
 
 }
