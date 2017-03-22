@@ -8,7 +8,7 @@ public class BranchIfDemo {
 		Scanner input = new Scanner(System.in);
 		System.out.println("请输入一个分数：");
 		int score = input.nextInt();
-
+/*
 		// 单分支if
 		if (score == 100) {
 			System.out.println("奖励你一个记事本！");
@@ -21,6 +21,14 @@ public class BranchIfDemo {
 			System.out.println("考试不及格，请补考！");
 		}
 
+		if (score >= 90) {
+			System.out.println("非常好！");
+		}
+		
+		if (score >= 80) {
+			System.out.println("良好！");
+		}
+		
 		// 多分支
 		if (score >= 90) {
 			System.out.println("非常好！");
@@ -35,7 +43,7 @@ public class BranchIfDemo {
 		} else if (score < 60) {
 			System.out.println("不及格！");
 		}
-
+*/
 		// switch
 		switch (score) {
 		case 90:

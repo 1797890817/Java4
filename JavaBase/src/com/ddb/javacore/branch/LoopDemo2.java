@@ -59,6 +59,13 @@ public class LoopDemo2 {
 			System.out.println("数组的元素为：" + string);
 		}
 	}
+	public static void forEachDemo2() {
+		System.out.println("In forEachDemo mrethod: ");
+		String[] strs = { "AA", "BB", "CC" };
+		for (String string : strs) {
+			System.out.println("数组的元素为：" + string);
+		}
+	}
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
