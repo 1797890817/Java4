@@ -58,9 +58,9 @@ public class BranchIfDemo {
 		case 60:
 			System.out.println("好！");
 			break;
-		default:
+		/*default:
 			System.out.println("不及格！");
-			break;
+			break;*/
 		}
 
 	}

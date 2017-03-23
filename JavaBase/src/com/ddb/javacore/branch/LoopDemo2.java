@@ -76,6 +76,7 @@ public class LoopDemo2 {
 			out.print(j+ " * "+ i +" = " + i * j + "\t");
 		}
 		out.println(); 
+		System.out.println();
 	}
 	
 	
