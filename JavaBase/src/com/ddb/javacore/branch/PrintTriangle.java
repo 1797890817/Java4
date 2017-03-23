@@ -10,10 +10,9 @@ public class PrintTriangle {
 		if (lgth < 0) {
 			return;
 		}
-		
+		int min = hight - tmp;	//可以加数值实现整体移动
+		int max = hight + tmp;	//可以加数值实现整体移动
 		for (int i = 1; i <= hight*2+1; i++) {
-			int min = hight + 1 - tmp;
-			int max = hight + 1 + tmp;
 			if (i >= min && i <= max) {
 				System.out.print("*");
 			} else {
@@ -23,7 +22,6 @@ public class PrintTriangle {
 		System.out.println("\n");
 		printStars(lgth, hight);
 	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("请输入三角形的高：");
@@ -33,7 +31,5 @@ public class PrintTriangle {
 		System.out.println("三角形的底边长是：" +length);
 		Integer lgth = hight;		
 		printStars(lgth, hight);
-
 	}
-
 }
