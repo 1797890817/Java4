@@ -7,6 +7,7 @@ public class Student {
 	public Student(String name) {
 		super();
 		this.name = name;
+		System.out.println("Student 构造函数执行：" + name);
 	}
 
 	/*@Override
