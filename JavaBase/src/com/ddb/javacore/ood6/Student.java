@@ -38,5 +38,10 @@ public class Student {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + "]";
+	}
+
 	
 }
