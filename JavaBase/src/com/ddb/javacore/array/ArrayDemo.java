@@ -2,6 +2,8 @@ package com.ddb.javacore.array;
 
 import static java.lang.System.out;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
 
 	public static void main(String[] args) {
@@ -28,6 +30,13 @@ public class ArrayDemo {
 
 		// 使用循环取值并输出
 		out.println("逐个循环输出：");
+		for (int i = 0; i < score.length; i++) {
+			out.println("score[" + i + "] = " + score[i] + ";");
+		}
+
+		// 排序：
+		Arrays.sort(score);
+		out.println("排序后逐个循环输出：");
 		for (int i = 0; i < score.length; i++) {
 			out.println("score[" + i + "] = " + score[i] + ";");
 		}
