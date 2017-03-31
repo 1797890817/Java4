@@ -14,6 +14,7 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public boolean equals(Object obj) {
+		System.out.println("Student 的比较方法被执行...");
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -21,9 +22,10 @@ public class Student implements Comparable<Student> {
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		/*
-		 * if (age != other.age) return false;
-		 */
+
+		if (age != other.age)
+			return false;
+
 		if (name == null) {
 			if (other.name != null)
 				return false;
