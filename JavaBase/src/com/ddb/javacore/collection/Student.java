@@ -1,7 +1,7 @@
 package com.ddb.javacore.collection;
 
 public class Student implements Comparable<Student> {
-	// public class Student {
+//public class Student {
 	String name;
 	int age;
 
@@ -39,7 +39,7 @@ public class Student implements Comparable<Student> {
 		return "[name=" + name + ", age=" + age + "]";
 	}
 
-	@Override
+	// @Override
 	public int compareTo(Student o) {
 		if (this.age < o.age) {
 			return -1;

@@ -1,6 +1,5 @@
 package com.ddb.javacore.collection;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 public class LinkedListDemo {

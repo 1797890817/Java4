@@ -1,13 +1,7 @@
 package com.ddb.javacore.collection;
 
-import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class ArrayListDemo2 {
 
