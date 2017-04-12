@@ -75,20 +75,18 @@ public class TestEnum {
 		}
 
 		// 枚举实例的比较
-		WeekEnum2 enum2 = WeekEnum2.FRIDAY;
+		WeekEnum2 enum2 = WeekEnum2.MONDAY;
 		// WeekEnum2 enum2 = WeekEnum2.SUNDAY;
-		switch (enum2.compareTo(WeekEnum2.SATURDAY)) {
-		case -1:
+		int compareTo = enum2.compareTo(WeekEnum2.SATURDAY);
+		System.out.println("compareTo ：" +compareTo);	//值为-5
+		//值并不是标准的-1、0、1，用switch..case会有bug，这一点要特别注意！
+		if (compareTo < 0) {
 			System.out.println(enum2.getDesc() + " 在前面");
-			break;
-		case 1:
+		} else if (compareTo > 0) {
 			System.out.println(enum2.getDesc() + " 在后面");
-			break;
-		default:
+		} else {
 			System.out.println(enum2.getDesc() + " 位置一样！");
-			break;
 		}
-
 	}
 
 }
