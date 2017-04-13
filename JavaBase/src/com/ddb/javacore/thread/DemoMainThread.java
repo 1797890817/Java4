@@ -6,7 +6,7 @@ public class DemoMainThread {
 
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
-		PrintStream out = System.out;
+		/*PrintStream out = System.out;
 		Thread thread = Thread.currentThread();
 		out.println("thread.getName() : " + thread.getName());
 		out.println("thread.getId() : " + thread.getId());
@@ -29,14 +29,16 @@ public class DemoMainThread {
 		System.out.println("总计时间：" + (end - start));
 		out.println("即将调用：Thread.yield()");
 		thread.yield(); // 让出CPU
-		out.println("调用：Thread.yield()结束！");
+		out.println("调用：Thread.yield()结束！");*/
 
 		// 实现Runnable接口的方式
 		Thread myRunable = new Thread(new MyRunnable());
 		myRunable.setName("MyRunable");
-		myRunable.setDaemon(true);	//设置为后台线程
+		//myRunable.setDaemon(true);	
+		//设置为后台线程，主线程结束则随之结束，若不是后台进程则不会因为主线程结束而子线程被强制结束
 		myRunable.start();
-		Thread.sleep(2000);    //休眠2秒
+		//Thread.sleep(2000);    //休眠2秒
+		//myRunable.join(); //让主线程等待子线程执行完再执行！否则可能出现子线程没有正常执行结束！
 		System.out.println("myRunable.isDaemon():" + myRunable.isDaemon());
 		//修改为后台守护线程
 		
