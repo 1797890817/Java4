@@ -46,6 +46,13 @@ public class WriteArticleRunable implements Runnable {
 					System.out.println(Thread.currentThread().getName() + ": 我释放资源，你们写吧！");
 					paper.setIsPrivated(false);
 					Thread.currentThread().setPriority(Thread.MIN_PRIORITY);// 降低线程的优先级！
+					System.out.println(Thread.currentThread().getName() + "休眠1s中...");
+					try {
+						Thread.sleep(1000);	//休眠中
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 
 				}
 
