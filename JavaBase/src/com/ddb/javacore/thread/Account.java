@@ -42,8 +42,8 @@ public class Account {
 			
 			hasMoney = false;
 			// 唤醒其他线程
-			//notifyAll();
-			notify();
+			notifyAll();
+			//notify();
 			System.out.println(Thread.currentThread().getName() + "-- 取钱 -- 执行完毕" + " -- i=" + i); // 3
 		}
 	}
@@ -69,14 +69,10 @@ public class Account {
 			System.out.println("###存钱后余额为：" + getBalance());
 			hasMoney = true;
 			// 唤醒其他线程
-			//notifyAll();
-			notify();
+			notifyAll();
+			//notify();
 			// 2
-			/*try {
-				Thread.sleep(3000); 
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}*/
+			
 			System.out.println(Thread.currentThread().getName() + "-- 存钱 -- 执行完毕" + " -- j=" + j);
 		}
 	}

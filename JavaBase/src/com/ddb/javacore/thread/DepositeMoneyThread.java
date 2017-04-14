@@ -16,5 +16,6 @@ public class DepositeMoneyThread extends Thread {
 		for (int i = 0; i <= 10; i++) {
 			account.deposite(amount, i);
 		}
+		System.out.println("++++存钱的次数已经结束！++++");
 	}
 }

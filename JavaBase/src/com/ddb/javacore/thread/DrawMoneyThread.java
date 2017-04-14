@@ -16,5 +16,6 @@ public class DrawMoneyThread extends Thread {
 		for (int i = 0; i <= 10; i++) {
 			account.draw(amount, i);
 		}
+		System.out.println("----取钱的次数结束！----");
 	}
 }
