@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HtmlDemo</title>
+</head>
+<body>
+	<span>用户名：</span>
+	<input name="name" type="text" value="" maxlength="6" size="5" />
+	<!-- 	<input name="name" type="text" value="default value" size="5"> -->
+	<br />
+	<span>密&nbsp;&nbsp;&nbsp;码：</span>
+	<input name="password" type="password" maxlength="7" size="5" />
+	<!-- size 控制输入框的长度 -->
+	<input name="submit" type="submit" value="确定" />
+	<input name="submit" type="submit" />
+	<input id="submit" name="submit" type="submit" />
+	<input name="reset" type="reset" />
+	<input name="reset" type="reset" value="取消" />
+	<hr />
+	<input name="button" type="button" />
+	<input name="button" type="button" value="按钮" />
+	<input name="button" type="image" src="baidu.png" />
+
+	<br />
+	<span>性别：</span>
+	<input name="radio" type="radio" value="男" checked="checked" title="男" />
+	<span style="color: red;">男</span>
+	<input name="radio" type="radio" value="女" title="女" />
+	<span>女</span>
+	<hr>
+	<br>
+	<p>省份：</p>
+	<input name="checkbox" type="checkbox" value="安徽" />
+	<span>安徽</span>
+	<input name="checkbox" type="checkbox" value="江苏" checked="checked" />
+	<span>江苏</span>
+	<input name="checkbox" type="checkbox" value="山东" />
+	<span>山东</span>
+	<br>
+	<input name="file" type="file">
+	<select name="select" size="5">
+		<!-- size 是指行数 -->
+		<option value="1">anhui</option>
+		<option value="2">jiangsu</option>
+		<option value="3" selected="selected">shandong</option>
+		<option value="4">beijing</option>
+	</select>
+	<hr>
+	<textarea name="textarea" cols="50" rows="15">
+	怵目惊心，我非常害怕贪腐力量的强大。怪不得中纪委没时间，到全国农村抓贪。怪不得，农村干部还能拉帮结派，耀武扬威。强烈建议中共中央领导机构。鉴于中国的腐败严重情况。向浙江大学，清华大学，北京大学，开科取士。经过党校培训上岗。替补全国省，市，区，县，镇，乡，村。一把手官员位置。来一次党员干部彻底大换血。否则，贪官是抓不完的。这样无休止的搞下去。中纪委会忙的死去活来。而贪污腐败，照样前腐后继，不可救药。治标不治本的反贪行动，是起不到最终治愈病症目标的。再说，岁月不饶人。我们的习总书记，就是最有生命力，顶多还能干十年。那以后中国的前途命运怎么办。贪污腐败怎么办。中国不但要坚持不懈的反腐败。但是，中国更需要的是对腐败官员。来一个釜底抽薪。把整个官员班子彻底清除。让大学生们来替补职位。既可以杜绝官员们的前腐后继。也起到了整个官员班子的纯洁度。改革中国官员班子问题，势在必行，箭在弦上，不得不发。否则，误国误民，贻害千年。
+	</textarea>
+
+	<input name="hidden" type="hidden" value="666">
+	<input name="color" type="color">
+	<input name="date" type="date">
+	<input name="tel" type="tel">
+
+	<hr />
+	<!-- readonly="readonly" -->
+	<textarea name="textarea" cols="50" rows="15" readonly="readonly">
+	怵目惊心，我非常害怕贪腐力量的强大。怪不得中纪委没时间，到全国农村抓贪。怪不得，农村干部还能拉帮结派，耀武扬威。强烈建议中共中央领导机构。鉴于中国的腐败严重情况。向浙江大学，清华大学，北京大学，开科取士。经过党校培训上岗。替补全国省，市，区，县，镇，乡，村。一把手官员位置。来一次党员干部彻底大换血。否则，贪官是抓不完的。这样无休止的搞下去。中纪委会忙的死去活来。而贪污腐败，照样前腐后继，不可救药。治标不治本的反贪行动，是起不到最终治愈病症目标的。再说，岁月不饶人。我们的习总书记，就是最有生命力，顶多还能干十年。那以后中国的前途命运怎么办。贪污腐败怎么办。中国不但要坚持不懈的反腐败。但是，中国更需要的是对腐败官员。来一个釜底抽薪。把整个官员班子彻底清除。让大学生们来替补职位。既可以杜绝官员们的前腐后继。也起到了整个官员班子的纯洁度。改革中国官员班子问题，势在必行，箭在弦上，不得不发。否则，误国误民，贻害千年。
+	</textarea>
+	<!-- disabled="disabled" -->
+	<br>
+	<input name="submit" type="submit" disabled="disabled">
+
+	<table width="200" border="1">
+		<tr>
+			<td colspan="3">学生成绩</td>
+		</tr>
+		<tr>
+			<td rowspan="2">张三</td>
+			<td>语文</td>
+			<td>98</td>
+		</tr>
+		<tr>
+			<td>数学</td>
+			<td>95</td>
+		</tr>
+
+		<tr>
+			<td rowspan="2">李四</td>
+			<td>语文</td>
+			<td>88</td>
+		</tr>
+		<tr>
+			<td>数学</td>
+			<td>91</td>
+		</tr>
+	</table>
+	<hr />
+	<table width="200px">
+		<caption>年终数据报表</caption>
+		<thead>
+			<tr>
+				<th>月份</th>
+				<th>收入</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1月份</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>2月份</td>
+				<td>150</td>
+			</tr>
+			<tr>
+				<td>3月份</td>
+				<td>200</td>
+			</tr>
+			<tr>
+				<td>4月份</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>5月份</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>6月份</td>
+				<td>150</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>平均值：</td>
+				<td>xxxxx</td>
+			</tr>
+			<tr>
+				<td>总计：</td>
+				<td>YYYY</td>
+			</tr>
+		</tfoot>
+	</table>
+
+
+</body>
+</html>
