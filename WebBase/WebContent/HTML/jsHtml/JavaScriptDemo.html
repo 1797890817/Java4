@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../js/JavaScript.js"></script>
+<script type="text/javascript">
+	//定义方法、或者函数
+	/* function Hello() {
+		document.write("Hello World!");
+	} */
+
+	//三种对话框
+	function dialogBox() {
+		//声明变量
+		var tmp;
+		//alert(tmp);
+		//tmp = alert("这是一个警告框，只有一个按钮！");
+		//tmp = confirm("这是一个确认框，有两个按钮！");
+		tmp = prompt("您的年龄是？", "25");
+
+		alert(tmp);
+
+	}
+
+	function wClose() {
+		window.close();
+	}
+</script>
+</head>
+<!-- <body onload="Hello()"> -->
+<body>
+
+	<input name="button1" type="button" value="测试按钮" onclick="dialogBox()">
+
+	<a href="javascript:self.close()">关闭窗口</a>
+
+	<input name="button2" type="button" value="关闭窗口" onclick="wClose()">
+	
+	<input name="button3" type="button" value="TestRefFile" onclick="testRef()">
+	<input name="button4" type="button" value="TestForIn" onclick="forIn(11,12,15)">
+</body>
+</html>
