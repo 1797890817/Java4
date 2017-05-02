@@ -66,6 +66,34 @@ function firstLastChildSelect() { // 相对来说是一个整体，有多个ul�
 function indexSelect() {
 	$('li:eq(2)').css('color', 'red');
 }
+// 内容包含的过滤选择器
+function containsSelect() {
+	$('li:contains(to)').css('color', 'blue');
+}
 
+// has包含的过滤选择器
+function hasSelect() {
+	$('li:has(span)').css('color', 'blue');
+}
 
+// has包含的过滤选择器
+function hiddenSelect() {
+	// $('p:hidden').show();
+	$('p:visible').hide();
+}
 
+// 属性选择器
+function propSelect() {
+	$('input[id=ipt]').val('hello');
+	$('input[name=txtDemo]').val('hello*****');
+}
+
+// 表单选择器
+function formSelect() {
+	console.log($('#my_form :input:checked'));
+}
+// 表单选择器
+function formSelect2() {
+	console.log($('#sel :selected'));
+
+}

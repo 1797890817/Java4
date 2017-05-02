@@ -48,6 +48,7 @@
 		<li>Banana</li>
 		<li>Potato</li>
 		<li>Orange</li>
+		<li>Apple2<p><span>Demo</span></p></li>
 	</ul>
 	<input type="button" value="过滤选择器-firstLast"
 		onclick="firstLastSelect()">
@@ -55,6 +56,37 @@
 		onclick="firstLastChildSelect()">
 	<input type="button" value="指定下标过滤选择器"
 		onclick="indexSelect()">
+		
+	<hr/>
+	<input type="button" value="包含过滤选择器" onclick="containsSelect()">
+	<input type="button" value="包含过滤选择器" onclick="hasSelect()">
+	<hr/>
+	<p style="display:none;">我是隐藏的</p>
+	<input type="button" value="显示隐藏过滤选择器" onclick="hiddenSelect()">
+	<input id="ipt" type="text" class="cls_ipt" />
+	<input name="txtDemo" type="text" class="cls_ipt" />
+	<input type="button" value="属性选择器" onclick="propSelect()">
+	
+	<form id="my_form">
+		<input type="text"/>
+		<input type="radio"/>
+		<input type="radio" checked="checked"/>
+		<input type="checkbox"/>
+		<input type="checkbox" checked="checked"/>
+	</form>
+	<input type="button" value="表单选择器" onclick="formSelect()">
+
+	<select id="sel" multiple="multiple">
+    	<option value="0">苹果</option>
+    	<option value="1" selected="selected">桔子</option>
+    	<option value="2">荔枝</option>
+    	<option value="3" selected="selected">葡萄</option>
+    	<option value="4">香蕉</option>
+	</select>
+	<input type="button" value="表单选择器2" onclick="formSelect2()">
+
+	
+	
 
 </body>
 </html>
