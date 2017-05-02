@@ -97,3 +97,87 @@ function formSelect2() {
 	console.log($('#sel :selected'));
 
 }
+
+// ******************************//
+// DOM 的attr()
+function attrDemo() {
+	console.log($('#my_form').attr('action'));
+	$('#my_form').attr('action', 'bar.html');
+	console.log($('#my_form').attr('action'));
+}
+
+// 删除属性
+function deleteProp() {
+	$("img").removeAttr("src");
+	console.log(document.getElementsByTagName("img")[0]);
+}
+// html() text()
+function htmlTextDemo() {
+	/*
+	 * console.log($('p').html()); //没有参数表示获取 $('p').html('<i>World</i>');
+	 * //有参数表示设置 console.log($('p').html());
+	 */
+
+	console.log($('p').text()); // 没有参数表示获取
+	$('p').text('<i>World</i>'); // 有参数表示设置
+	console.log($('p').text());
+}
+
+// css()
+function cssDemo() {
+	// document.getElementsByTagName("p")[0].style.color="blue";
+	$('p')[0].style.color = "blue";
+	// $('p').css('color', 'red');
+	console.log($('p').css('color'));
+}
+
+// css()
+function classAdd() {
+	console.log(document.getElementById("p01"));
+	$('#p01').addClass("test");
+	console.log(document.getElementById("p01"));
+}
+
+// appendDemo()
+function appendDemo() {
+	$('#p01').append("****");
+	$('#p01').prepend("####");
+}
+
+// after()
+function afterBefoerDemo() {
+	 //$('#p02').after("<p><b>World</b></p>");
+	$('#p02').before("<p><b>I love </b></p>");
+
+}
+
+// clone()
+function cloneDemo() {
+	var cloned_p = $('#p03').clone();
+	$('#p03').after(cloned_p);
+}
+
+// replaceWith()
+function replaceWithDemo() {
+	$('#p04').replaceWith("<b>World!</b>");
+}
+
+// wrap()
+function wrapDemo() {
+	$('#p04').wrap("<h1></h1>");
+}
+// wrapInner()
+function wrapInnerDemo() {
+	$('#p04').wrapInner("<I></I>");
+}
+
+// remove()
+function removeDemo() {
+	//$('li').remove();
+	$('li').remove(".fruit");
+}
+
+// empty()
+function emptyDemo() {
+	$('body').empty();
+}
