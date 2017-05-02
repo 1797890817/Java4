@@ -146,7 +146,7 @@ function appendDemo() {
 
 // after()
 function afterBefoerDemo() {
-	 //$('#p02').after("<p><b>World</b></p>");
+	// $('#p02').after("<p><b>World</b></p>");
 	$('#p02').before("<p><b>I love </b></p>");
 
 }
@@ -173,7 +173,7 @@ function wrapInnerDemo() {
 
 // remove()
 function removeDemo() {
-	//$('li').remove();
+	// $('li').remove();
 	$('li').remove(".fruit");
 }
 
@@ -181,3 +181,41 @@ function removeDemo() {
 function emptyDemo() {
 	$('body').empty();
 }
+
+// *****************************************//
+// 事件
+$(function() {
+	$('#btn').bind('click', function() {
+		$(this).attr("disabled", "true");
+	})
+
+	$('#username').bind('focus', function() {
+		$(this).css("border", "3pt solid red")
+	}).bind('blur', function() {
+		$(this).css("border", "3pt solid yellow")
+	})		/*jQuery的链式书写*/
+	
+/*	$('#btn2').mouseover(function() {
+		$(this).val("mouseover -已进入");
+	}
+	)
+	
+	$('#btn2').mouseout(function() {
+		$(this).val("mouseout -已退出");
+	}
+	)*/
+	$('#btn2').mouseover(function() {
+		$(this).val("mouseover -已进入");
+	}
+	).mouseout(function() {
+		$(this).val("mouseout -已退出");
+	}
+	)
+	
+	$('#btn').hover(function() {
+		$(this).val("已进入");
+	}, function() {
+		$(this).val("已退出");
+	})
+
+});
