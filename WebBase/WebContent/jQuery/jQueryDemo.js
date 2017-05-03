@@ -300,7 +300,6 @@ function fadeToDemo() {
 
 // animate()
 function animateDemo() {
-	//$('#button01').bind('click', function() {
 		$('#div01').animate({
 			width : '240px',
 			height : '320px'
@@ -308,16 +307,13 @@ function animateDemo() {
 			height : '32px'},3000,function(){
 				alert("恢复成功！")
 			});*/
-	//});
 }
 
 // animate()
 function animateDemo2() {
-	//$('#button01').bind('click', function() {
 	$('#div02').animate({
 		 left: '+=100px',
 		 //top:'+50px'
 		 //fontSize:25			//样式采用驼峰式写法！
 	}, 3000);
-	//});
 }
