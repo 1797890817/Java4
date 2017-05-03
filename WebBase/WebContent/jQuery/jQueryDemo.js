@@ -193,25 +193,19 @@ $(function() {
 		$(this).css("border", "3pt solid red")
 	}).bind('blur', function() {
 		$(this).css("border", "3pt solid yellow")
-	})		/*jQuery的链式书写*/
-	
-/*	$('#btn2').mouseover(function() {
-		$(this).val("mouseover -已进入");
-	}
-	)
-	
-	$('#btn2').mouseout(function() {
-		$(this).val("mouseout -已退出");
-	}
-	)*/
+	}) /* jQuery的链式书写 */
+
+	/*
+	 * $('#btn2').mouseover(function() { $(this).val("mouseover -已进入"); } )
+	 * 
+	 * $('#btn2').mouseout(function() { $(this).val("mouseout -已退出"); } )
+	 */
 	$('#btn2').mouseover(function() {
 		$(this).val("mouseover -已进入");
-	}
-	).mouseout(function() {
+	}).mouseout(function() {
 		$(this).val("mouseout -已退出");
-	}
-	)
-	
+	})
+
 	$('#btn').hover(function() {
 		$(this).val("已进入");
 	}, function() {
@@ -219,3 +213,111 @@ $(function() {
 	})
 
 });
+
+// ****************************************//
+// 动画
+// show()
+function showDemo() {
+	 //$('#divDemo').show();
+	 $('#divDemo').show(5000);
+	 //$('#divDemo').show('slow');
+	
+	/*$('#divDemo').show('slow', function() {
+		alert("Div 显示成功！")
+	});*/
+}
+
+// hide()
+function hideDemo() {
+	 //$('#divDemo').hide();
+	 $('#divDemo').hide(5000);
+	 //$('#divDemo').hide('slow');
+	/*$('#divDemo').hide('slow', function() {
+		alert("Div 隐藏成功！")
+	});*/
+}
+
+// hide()
+function toggleDemo() {
+	// $('#divDemo').toggle('slow');
+	$('#divDemo').toggle('slow', function() {
+		if ($('#divDemo')[0].style.display == 'block') {
+			alert("Div 显示成功！")
+		} else {
+			alert("Div 隐藏成功！")
+		}
+	});
+}
+
+// slideUp()
+function slideUpDemo() {
+	// $('#divDemo').slideUp('slow');
+	$('#divDemo').slideUp('slow', function() {
+		alert("Div slideUp！")
+	});
+}
+
+// slideDown()
+function slideDownDemo() {
+	// $('#divDemo').slideUp('slow');
+	$('#divDemo').slideDown('slow', function() {
+		alert("Div slideDown！")
+	});
+}
+
+// slideToggle()
+function slideToggleDemo() {
+	// $('#divDemo').slideToggle('slow');
+	$('#divDemo').slideToggle('slow', function() {
+		alert("Div slideToggle！")
+	});
+}
+
+// fadeIn()
+function fadeInDemo() {
+	// $('#divDemo').fadeIn('slow');
+	$('#divDemo').fadeIn(5000);
+	/*
+	 * $('#divDemo').fadeIn('slow', function() { alert("Div fadeIn！") });
+	 */
+}
+
+// fadeOut()
+function fadeOutDemo() {
+	$('#divDemo').fadeOut(5000);
+	/*
+	 * $('#divDemo').fadeOut('slow', function() { alert("Div fadeOut！") });
+	 */
+}
+
+// fadeTo()
+function fadeToDemo() {
+	$('#divDemo').fadeTo(5000,0.2);
+	/*$('#divDemo').fadeTo('slow', 0.5, function() {
+		alert("Div fadeTo！")
+	});*/
+}
+
+// animate()
+function animateDemo() {
+	//$('#button01').bind('click', function() {
+		$('#div01').animate({
+			width : '240px',
+			height : '320px'
+		}, 3000)/*.animate({width : '24px',
+			height : '32px'},3000,function(){
+				alert("恢复成功！")
+			});*/
+	//});
+}
+
+// animate()
+function animateDemo2() {
+	//$('#button01').bind('click', function() {
+	$('#div02').animate({
+		 left: '+=100px',
+		 //top:'+50px'
+		 //fontSize:25			//样式采用驼峰式写法！
+	}, 3000);
+	//});
+}
