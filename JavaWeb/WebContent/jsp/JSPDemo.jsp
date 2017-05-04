@@ -35,6 +35,7 @@
 	
 	<p>现在的时间是：</p>
 	<%@ include file="systemTime.html" %>
+	<hr/>
 
 </body>
 </html>
