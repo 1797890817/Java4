@@ -7,4 +7,23 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>dbinit</servlet-name>
+		<jsp-file>/WEB-INF/config_init_params.jsp</jsp-file>
+		<!-- <jsp-file>/jsp/InnerObjs/ObjDemo/config_init_params.jsp</jsp-file> -->
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>org.gjt.mm.mysql.Driver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:mysql://localhost:3306/javaweb</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dbinit</servlet-name>
+		<url-pattern>/config.init</url-pattern>
+	</servlet-mapping>
+
 </web-app>
