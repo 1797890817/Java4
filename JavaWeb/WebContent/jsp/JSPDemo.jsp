@@ -37,5 +37,12 @@
 	<%@ include file="systemTime.html" %>
 	<hr/>
 
+	<%-- <jsp:scriptlet></jsp:scriptlet> 和<% %>功能相同,Eclipse没有自动提示出来，不建议使用！ --%>
+	<jsp:scriptlet>
+		String url = "localhost";	//定义局部变量
+	</jsp:scriptlet>
+	
+	<h2><%= url %></h2>
+	
 </body>
 </html>
