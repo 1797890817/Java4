@@ -8,7 +8,9 @@
 </head>
 <body>
 	<% 
-	Cookie c1 = new Cookie("name","zhangsan");
+	Cookie c1 = new Cookie("name","zhangsan");	
+	//若想支持中文，要对值使用编码和解码
+	
 	Cookie c2 = new Cookie("age","36");
 	c1.setMaxAge(3);
 	c2.setMaxAge(3);
