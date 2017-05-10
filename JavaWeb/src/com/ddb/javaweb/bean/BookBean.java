@@ -17,6 +17,12 @@ public class BookBean {
 		this.bookNum =bookNum ;
 	}
 
+	//add for test EL method
+	@Override
+	public String toString() {
+		return "BookBean [bookName=" + bookName + ", bookNum=" + bookNum + "]";
+	}
+
 //	/**
 //	 * @return the bookName
 //	 */

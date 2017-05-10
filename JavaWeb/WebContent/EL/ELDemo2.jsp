@@ -26,8 +26,9 @@
 	<span>数量--${'${'}book.bookNum }：</span>${book.bookNum}<br/>
 	<span>书名--${'${'}book['bookName']}：</span>${book['bookName']}<br/>
 	<span>数量--${'${'}book[ 'bookNum ']}：</span>${book['bookNum']}<br/>
+	<span>调用toString方法：</span>${book.toString()}
 	<hr/>
-	<span>${'${'}pageScope.book-addr}</span>${pageScope.book-addr}<br/>
+	<%-- <span>${'${'}pageScope.book-addr}</span>${pageScope.book-addr}<br/> --%>	<!-- 这样写错误！ -->
 	<span>${'${'}pageScope['book-addr']}</span>${pageScope['book-addr']}<br/>
 	<span>${'${'}pageScope.book_addr}</span>${pageScope.book_addr}<br/>
 	<span>${'${'}pageScope['book_addr']}</span>${pageScope['book_addr']}<br/>
