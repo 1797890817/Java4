@@ -24,6 +24,8 @@
 	<c:out value="${bb.bookName}" />	
 	<br>
 	<c:out value="${error}" />	<!-- 输出错误信息 -->
+	
+	<c:out value="<h1><b>JavaWeb 真好学！</b></h1>" escapeXml="false"></c:out>
 
 </body>
 </html>
