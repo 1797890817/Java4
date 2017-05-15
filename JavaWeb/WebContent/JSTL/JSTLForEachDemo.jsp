@@ -1,3 +1,6 @@
+<%@page import="java.util.HashSet"%>
+<%@page import="java.util.HashMap"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -39,18 +42,63 @@
 	<c:forEach var="i" begin="1" end="15">
   		${i}&nbsp;
 	</c:forEach>
-	<hr/>
+	<hr />
 	显示从1到15的整数值：步长为1
 	<br />
 	<c:forEach var="i" begin="1" end="15" step="1">
   		${i}&nbsp;
 	</c:forEach>
-	
-	<hr/>
+
+	<hr />
 	显示从1到15的整数值：步长为3
 	<br />
 	<c:forEach var="i" begin="1" end="15" step="3">
   		${i}&nbsp;
 	</c:forEach>
+
+	<hr/>
+	<p>JSTL 访问集合</p>
+	<%
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("JavaBase");
+		list.add("WebBase");
+		list.add("JavaWeb");
+		list.add("Database");
+		list.add("JavaEE");
+		pageContext.setAttribute("list", list);
+		
+		HashSet<String> set = new HashSet<String>();
+		set.add("JavaBase22");
+		set.add("WebBase22");
+		set.add("JavaWeb22");
+		set.add("Database22");
+		set.add("JavaEE22");
+		pageContext.setAttribute("set", set);
+
+		HashMap<String,String> map = new HashMap<String,String>();
+		map.put("01", "Java编程思想");
+		map.put("02", "研磨设计模式");
+		map.put("03", "Java虚拟机原理");
+		map.put("04", "Html5权威指南");
+		pageContext.setAttribute("map", map);
+	%>
+
+	<p>使用forEach遍历List的内容：</p>
+	<c:forEach var="item" items="${list}" >
+		<c:out value="${item}"></c:out><br/>
+	</c:forEach>
+	<p>使用forEach遍历set的内容：</p>
+	<c:forEach var="item" items="${set}" >
+		<c:out value="${item}"></c:out><br/>
+	</c:forEach>
+	<p>使用forEach遍历map的内容：</p>
+	<c:forEach var="item" items="${map}" >
+		<c:out value="${item}"></c:out><br/>
+	</c:forEach>
+	<p>使用forEach遍历map的内容：</p>
+	<c:forEach var="item" items="${map}" >
+		<c:out value="${item.key}"></c:out> ---- <c:out value="${item.value}"></c:out><br/>
+	</c:forEach>
+
 </body>
 </html>
