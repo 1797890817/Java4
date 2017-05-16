@@ -9,8 +9,6 @@
     <param-name>rri</param-name>
     <param-value>1223</param-value>
   </context-param>
-  
-  <!-- Servlet Config -->
   <servlet>
     <servlet-name>ServletDemo</servlet-name>
     <servlet-class>com.ddb.javaweb.servlet.ServletDemo</servlet-class>
@@ -18,8 +16,39 @@
   <servlet-mapping>
     <servlet-name>ServletDemo</servlet-name>
     <url-pattern>/Servlet/ServletDemo</url-pattern>
-    <url-pattern>/456</url-pattern>	<!-- 多个URL的xml配置方式 -->
+    <url-pattern>/456</url-pattern>
   </servlet-mapping>
+  
+  <!-- Servlet 启动顺序测试 -->
+  <servlet>
+  	<servlet-name>ServletInitOrderDemo</servlet-name>
+  	<servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletInitOrderDemo</servlet-name>
+  	<url-pattern>/Servlet/ServletInitOrderDemo</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  	<servlet-name>ServletInitOrderDemo3</servlet-name>
+  	<servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo3</servlet-class>
+  	<load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletInitOrderDemo3</servlet-name>
+  	<url-pattern>/Servlet/ServletInitOrderDemo3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServletInitOrderDemo2</servlet-name>
+  	<servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo2</servlet-class>
+  	<load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletInitOrderDemo2</servlet-name>
+  	<url-pattern>/Servlet/ServletInitOrderDemo2</url-pattern>
+  </servlet-mapping>
+
   
   
   <servlet>
