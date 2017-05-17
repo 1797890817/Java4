@@ -36,7 +36,7 @@ public class ServletDemo extends HttpServlet {
 		 * response.getWriter().append("Served at: ").append(request.
 		 * getContextPath());
 		 */
-		response.setContentType("text/html;charset=UTF-8");// 设置生成的文档类型
+		response.setContentType("text/html;charset=UTF-8");// 设置生成的文档类型防止输出内容乱码,通常需要在输出前设置！否则无效！
 		PrintWriter out = response.getWriter();// 得到输出字符输出流
 		out.println("<HTML>");// 输出相应的HTML源文件
 		out.println("<BODY>");

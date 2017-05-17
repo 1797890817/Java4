@@ -18,39 +18,53 @@
     <url-pattern>/Servlet/ServletDemo</url-pattern>
     <url-pattern>/456</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 启动顺序测试 -->
   <servlet>
-  	<servlet-name>ServletInitOrderDemo</servlet-name>
-  	<servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo</servlet-class>
-  	<load-on-startup>1</load-on-startup>
+    <servlet-name>ServletInitOrderDemo</servlet-name>
+    <servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo</servlet-class>
+    <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>ServletInitOrderDemo</servlet-name>
-  	<url-pattern>/Servlet/ServletInitOrderDemo</url-pattern>
+    <servlet-name>ServletInitOrderDemo</servlet-name>
+    <url-pattern>/Servlet/ServletInitOrderDemo</url-pattern>
   </servlet-mapping>
-    <servlet>
-  	<servlet-name>ServletInitOrderDemo3</servlet-name>
-  	<servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo3</servlet-class>
-  	<load-on-startup>3</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>ServletInitOrderDemo3</servlet-name>
-  	<url-pattern>/Servlet/ServletInitOrderDemo3</url-pattern>
-  </servlet-mapping>
-  
   <servlet>
-  	<servlet-name>ServletInitOrderDemo2</servlet-name>
-  	<servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo2</servlet-class>
-  	<load-on-startup>2</load-on-startup>
+    <servlet-name>ServletInitOrderDemo3</servlet-name>
+    <servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo3</servlet-class>
+    <load-on-startup>3</load-on-startup>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>ServletInitOrderDemo2</servlet-name>
-  	<url-pattern>/Servlet/ServletInitOrderDemo2</url-pattern>
+    <servlet-name>ServletInitOrderDemo3</servlet-name>
+    <url-pattern>/Servlet/ServletInitOrderDemo3</url-pattern>
   </servlet-mapping>
-
-  
-  
+  <servlet>
+    <servlet-name>ServletInitOrderDemo2</servlet-name>
+    <servlet-class>com.ddb.javaweb.servlet.ServletInitOrderDemo2</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletInitOrderDemo2</servlet-name>
+    <url-pattern>/Servlet/ServletInitOrderDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletInitParam</servlet-name>
+    <servlet-class>com.ddb.javaweb.servlet.ServletInitParam</servlet-class>
+    <init-param>
+      <param-name>institute</param-name>
+      <param-value>职业培训学院</param-value>
+    </init-param>
+    <init-param>
+      <param-name>major</param-name>
+      <param-value>Java技术</param-value>
+    </init-param>
+    <init-param>
+      <param-name>count</param-name>
+      <param-value>10000</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletInitParam</servlet-name>
+    <url-pattern>/Servlet/InitParam</url-pattern>
+  </servlet-mapping>
   <servlet>
     <servlet-name>dbinit</servlet-name>
     <jsp-file>/WEB-INF/config_init_params.jsp</jsp-file>
