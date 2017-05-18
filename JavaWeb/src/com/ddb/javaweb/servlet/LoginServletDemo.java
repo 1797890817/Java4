@@ -26,8 +26,8 @@ public class LoginServletDemo extends HttpServlet {
 		 * response.getWriter().append("Served at: ").append(request.
 		 * getContextPath());
 		 */
-
-		response.setContentType("text/html;charset=UTF-8");// 设置生成的文档类型
+		response.setCharacterEncoding("UTF-8");
+		//response.setContentType("text/html;charset=UTF-8");// 设置生成的文档类型
 		PrintWriter out = response.getWriter();// 得到输出字符输出流
 		out.println("<HTML>");// 输出相应的HTML源文件
 		out.println("<HEAD><TITLE>用servlet测试get/post方法</TITLE></HEAD>");
