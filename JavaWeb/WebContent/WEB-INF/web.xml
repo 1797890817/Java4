@@ -9,6 +9,28 @@
     <param-name>rri</param-name>
     <param-value>1223</param-value>
   </context-param>
+  
+ <!--  过滤器配置 -->
+<filter>
+	<filter-name>FilterDemo</filter-name>
+	<filter-class>com.ddb.javaweb.filter.FilterDemo</filter-class>
+	<init-param>
+		<description>Use UTF-8</description>
+		<param-name>charset</param-name>
+		<param-value>UTF-8</param-value>
+	</init-param>
+</filter>
+<filter-mapping>
+	<filter-name>FilterDemo</filter-name>
+	<url-pattern>/Servlet/*</url-pattern>
+	<!-- <servlet-name>LoginServletDemo</servlet-name> -->
+	<dispatcher>REQUEST</dispatcher>
+	<dispatcher>FORWARD</dispatcher>
+	<dispatcher>ERROR</dispatcher>
+	<dispatcher>INCLUDE</dispatcher>
+</filter-mapping>
+  
+  
   <servlet>
     <servlet-name>ServletDemo</servlet-name>
     <servlet-class>com.ddb.javaweb.servlet.ServletDemo</servlet-class>
