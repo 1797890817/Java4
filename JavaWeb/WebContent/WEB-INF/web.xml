@@ -10,12 +10,8 @@
     <param-value>1223</param-value>
   </context-param>
   <session-config>
-  	<session-timeout>2</session-timeout>	<!-- 会话2分钟失效 -->
+    <session-timeout>15</session-timeout>
   </session-config>
-  
-  <listener>
-    <listener-class>com.ddb.javaweb.listener.RequestListenerDemo</listener-class>
-  </listener>
   <filter>
     <filter-name>FilterDemo</filter-name>
     <filter-class>com.ddb.javaweb.filter.FilterDemo</filter-class>
