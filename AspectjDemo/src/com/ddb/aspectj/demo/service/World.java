@@ -2,7 +2,7 @@ package com.ddb.aspectj.demo.service;
 
 /**
  * Description:
- * <br/>网站: <a href="http://www.crazyit.org">疯狂Java联盟</a>
+ * <br/>缃戠珯: <a href="http://www.crazyit.org">鐤媯Java鑱旂洘</a>
  * <br/>Copyright (C), 2001-2016, Yeeku.H.Lee
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
@@ -12,9 +12,9 @@ package com.ddb.aspectj.demo.service;
  */
 public class World
 {
-	// 定义一个简单方法，模拟应用中的业务逻辑方法
+	// 瀹氫箟涓�涓畝鍗曟柟娉曪紝妯℃嫙搴旂敤涓殑涓氬姟閫昏緫鏂规硶
 	public void bar()
 	{
-		System.out.println("执行World组件的bar()方法");
+		System.out.println("鎵цWorld缁勪欢鐨刡ar()鏂规硶");
 	}
 }

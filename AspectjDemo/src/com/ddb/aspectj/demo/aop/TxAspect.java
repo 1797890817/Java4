@@ -3,7 +3,7 @@ package com.ddb.aspectj.demo.aop;
 
 /**
  * Description:
- * <br/>ÍøÕ¾: <a href="http://www.crazyit.org">·è¿ñJavaÁªÃË</a>
+ * <br/>ç½‘ç«™: <a href="http://www.crazyit.org">ç–¯ç‹‚Javaè”ç›Ÿ</a>
  * <br/>Copyright (C), 2001-2016, Yeeku.H.Lee
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
@@ -13,13 +13,13 @@ package com.ddb.aspectj.demo.aop;
  */
 public aspect TxAspect
 {
-	//  Ö¸¶¨Ö´ĞĞHello.sayHello()·½·¨Ê±Ö´ĞĞÏÂÃæ´úÂë¿é
+	//  æŒ‡å®šæ‰§è¡ŒHello.sayHello()æ–¹æ³•æ—¶æ‰§è¡Œä¸‹é¢ä»£ç å—
 	Object around():call(* com.ddb.aspectj.demo.service.*.*(..))
 	{
-		System.out.println("Ä£Äâ¿ªÆôÊÂÎñ...");
-		// »Øµ÷Ô­À´µÄÄ¿±ê·½·¨
+		System.out.println("æ¨¡æ‹Ÿå¼€å¯äº‹åŠ¡...");
+		// å›è°ƒåŸæ¥çš„ç›®æ ‡æ–¹æ³•
 		Object rvt = proceed();
-		System.out.println("Ä£Äâ½áÊøÊÂÎñ...");
+		System.out.println("æ¨¡æ‹Ÿç»“æŸäº‹åŠ¡...");
 		return rvt;
 	}
 }

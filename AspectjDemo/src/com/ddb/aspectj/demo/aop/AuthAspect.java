@@ -1,7 +1,7 @@
 package com.ddb.aspectj.demo.aop;
 /**
  * Description:
- * <br/>ÍøÕ¾: <a href="http://www.crazyit.org">·è¿ñJavaÁªÃË</a>
+ * <br/>ç½‘ç«™: <a href="http://www.crazyit.org">ç–¯ç‹‚Javaè”ç›Ÿ</a>
  * <br/>Copyright (C), 2001-2016, Yeeku.H.Lee
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
@@ -11,11 +11,11 @@ package com.ddb.aspectj.demo.aop;
  */
 public aspect AuthAspect
 {
-	// Ö¸¶¨ÔÚÖ´ĞĞorg.crazyit.app.service°üÖĞÈÎÒâÀàµÄ¡¢ÈÎÒâ·½·¨Ö®Ç°Ö´ĞĞÏÂÃæ´úÂë¿é
-	// µÚÒ»¸öĞÇºÅ±íÊ¾·µ»ØÖµ²»ÏŞ£»µÚ¶ş¸öĞÇºÅ±íÊ¾ÀàÃû²»ÏŞ£»
-	// µÚÈı¸öĞÇºÅ±íÊ¾·½·¨Ãû²»ÏŞ£»Ô²À¨ºÅÖĞ..´ú±íÈÎÒâ¸öÊı¡¢ÀàĞÍ²»ÏŞµÄĞÎ²Î
+	// æŒ‡å®šåœ¨æ‰§è¡Œorg.crazyit.app.serviceåŒ…ä¸­ä»»æ„ç±»çš„ã€ä»»æ„æ–¹æ³•ä¹‹å‰æ‰§è¡Œä¸‹é¢ä»£ç å—
+	// ç¬¬ä¸€ä¸ªæ˜Ÿå·è¡¨ç¤ºè¿”å›å€¼ä¸é™ï¼›ç¬¬äºŒä¸ªæ˜Ÿå·è¡¨ç¤ºç±»åä¸é™ï¼›
+	// ç¬¬ä¸‰ä¸ªæ˜Ÿå·è¡¨ç¤ºæ–¹æ³•åä¸é™ï¼›åœ†æ‹¬å·ä¸­..ä»£è¡¨ä»»æ„ä¸ªæ•°ã€ç±»å‹ä¸é™çš„å½¢å‚
 	before(): execution(* com.ddb.aspectj.demo.service.*.*(..))
 	{
-		System.out.println("Ä£Äâ½øĞĞÈ¨ÏŞ¼ì²é...");
+		System.out.println("æ¨¡æ‹Ÿè¿›è¡Œæƒé™æ£€æŸ¥...");
 	}
 }

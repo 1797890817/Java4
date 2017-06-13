@@ -1,7 +1,7 @@
 package com.ddb.aspectj.demo.aop;
 /**
  * Description:
- * <br/>ÍøÕ¾: <a href="http://www.crazyit.org">·è¿ñJavaÁªÃË</a>
+ * <br/>ç½‘ç«™: <a href="http://www.crazyit.org">ç–¯ç‹‚Javaè”ç›Ÿ</a>
  * <br/>Copyright (C), 2001-2016, Yeeku.H.Lee
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
@@ -11,12 +11,12 @@ package com.ddb.aspectj.demo.aop;
  */
 public aspect LogAspect
 {
-	// ¶¨ÒåÒ»¸öPointCut£¬ÆäÃûÎªlogPointcut£¬
-	// ¸ÃPointcut´ú±íÁËºóÃæ¸ø³öµÄÇĞÈëµã±í´ïÊ½£¬ÕâÑù¿É¸´ÓÃ¸ÃÇĞÈëµã±í´ïÊ½
+	// å®šä¹‰ä¸€ä¸ªPointCutï¼Œå…¶åä¸ºlogPointcutï¼Œ
+	// è¯¥Pointcutä»£è¡¨äº†åé¢ç»™å‡ºçš„åˆ‡å…¥ç‚¹è¡¨è¾¾å¼ï¼Œè¿™æ ·å¯å¤ç”¨è¯¥åˆ‡å…¥ç‚¹è¡¨è¾¾å¼
 	pointcut logPointcut()
 		:execution(* com.ddb.aspectj.demo.service.*.*(..));
 	after():logPointcut()
 	{
-		System.out.println("Ä£Äâ¼ÇÂ¼ÈÕÖ¾...");
+		System.out.println("æ¨¡æ‹Ÿè®°å½•æ—¥å¿—...");
 	}
 }

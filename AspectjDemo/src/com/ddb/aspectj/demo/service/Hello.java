@@ -2,7 +2,7 @@ package com.ddb.aspectj.demo.service;
 
 /**
  * Description:
- * <br/>ÍøÕ¾: <a href="http://www.crazyit.org">·è¿ñJavaÁªÃË</a>
+ * <br/>ç½‘ç«™: <a href="http://www.crazyit.org">ç–¯ç‹‚Javaè”ç›Ÿ</a>
  * <br/>Copyright (C), 2001-2016, Yeeku.H.Lee
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
@@ -12,15 +12,15 @@ package com.ddb.aspectj.demo.service;
  */
 public class Hello
 {
-	// ¶¨ÒåÒ»¸ö¼òµ¥·½·¨£¬Ä£ÄâÓ¦ÓÃÖĞµÄÒµÎñÂß¼­·½·¨
+	// å®šä¹‰ä¸€ä¸ªç®€å•æ–¹æ³•ï¼Œæ¨¡æ‹Ÿåº”ç”¨ä¸­çš„ä¸šåŠ¡é€»è¾‘æ–¹æ³•
 	public void foo()
 	{
-		System.out.println("Ö´ĞĞHello×é¼şµÄfoo()·½·¨");
+		System.out.println("æ‰§è¡ŒHelloç»„ä»¶çš„foo()æ–¹æ³•");
 	}
-	// ¶¨ÒåÒ»¸öaddUser()·½·¨£¬Ä£ÄâÓ¦ÓÃÖĞµÄÌí¼ÓÓÃ»§µÄ·½·¨
+	// å®šä¹‰ä¸€ä¸ªaddUser()æ–¹æ³•ï¼Œæ¨¡æ‹Ÿåº”ç”¨ä¸­çš„æ·»åŠ ç”¨æˆ·çš„æ–¹æ³•
 	public int addUser(String name , String pass)
 	{
-		System.out.println("Ö´ĞĞHello×é¼şµÄaddUserÌí¼ÓÓÃ»§£º" + name);
+		System.out.println("æ‰§è¡ŒHelloç»„ä»¶çš„addUseræ·»åŠ ç”¨æˆ·ï¼š" + name);
 		return 20;
 	}
 }
