@@ -35,7 +35,7 @@ public class SessionListenerDemo implements HttpSessionListener, HttpSessionAttr
 	 * @see HttpSessionIdListener#sessionIdChanged(HttpSessionEvent, String)
 	 */
 	public void sessionIdChanged(HttpSessionEvent paramHttpSessionEvent, String paramString) {
-		System.out.println("SessionListenerDemo --sessionIdChanged");
+		System.out.println("SessionListenerDemo --sessionIdChanged,旧的ID："+ paramString+" ，新的ID：" + paramHttpSessionEvent.getSession().getId());
 	}
 
 	/**

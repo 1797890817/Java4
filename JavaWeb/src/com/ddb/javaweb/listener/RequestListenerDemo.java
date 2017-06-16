@@ -6,7 +6,6 @@ import javax.servlet.ServletRequestAttributeEvent;
 import javax.servlet.ServletRequestAttributeListener;
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
-import javax.servlet.annotation.WebListener;
 
 /**
  * Application Lifecycle Listener implementation class RequestListenerDemo
@@ -26,7 +25,7 @@ public class RequestListenerDemo implements ServletRequestListener, ServletReque
      * @see AsyncListener#onComplete(AsyncEvent)
      */
     public void onComplete(AsyncEvent arg0) throws java.io.IOException { 
-         System.out.println("RequestListenerDemo --onComplete!");
+         System.out.println("RequestListenerDemo --AsyncListener--onComplete!"+ arg0.getSuppliedRequest().getServerName());
     }
 
 	/**
@@ -48,14 +47,14 @@ public class RequestListenerDemo implements ServletRequestListener, ServletReque
      * @see AsyncListener#onError(AsyncEvent)
      */
     public void onError(AsyncEvent arg0) throws java.io.IOException { 
-        System.out.println("RequestListenerDemo --onError!");
+        System.out.println("RequestListenerDemo --AsyncListener--onError!"+ arg0.getThrowable().getMessage());
     }
 
 	/**
      * @see AsyncListener#onStartAsync(AsyncEvent)
      */
     public void onStartAsync(AsyncEvent arg0) throws java.io.IOException { 
-       System.out.println("RequestListenerDemo --onStartAsync!");
+       System.out.println("RequestListenerDemo --AsyncListener--onStartAsync!" + arg0.getSuppliedRequest().getRemoteHost());
     }
 
 	/**
@@ -77,7 +76,7 @@ public class RequestListenerDemo implements ServletRequestListener, ServletReque
      * @see AsyncListener#onTimeout(AsyncEvent)
      */
     public void onTimeout(AsyncEvent arg0) throws java.io.IOException { 
-    	System.out.println("RequestListenerDemo --onTimeout");
+    	System.out.println("RequestListenerDemo --AsyncListener--onTimeout"+ arg0.getSuppliedRequest().getServerName());
     }
 
 	/**
