@@ -14,10 +14,14 @@
 		<s:submit value="登录" />
 	</s:form>
 	
-	<h1>可以通过下面的链接查看映射：</h1>
+	<h2>下面的内容都是为了适配而添加的：</h2>
+	<h2>可以通过下面的链接查看映射：</h2>
 	<a href="http://localhost:8080/Struts2-Convention/config-browser/actionNames.action">http://localhost:8080/Struts2-Convention/config-browser/actionNames.action</a>
 	
 	<h2>说明：适配此项目需要在Action的类上@ResultPath("/content/")注解，否则系统提示找不到映射结果的错误！--dudongbin20170617！</h2>
 	<h2>缺点也很明显，每一个类都要这么个注解配置！</h2>
+	
+	<a href="chain/first">Action链演示</a>
+	
 </body>
 </html>
