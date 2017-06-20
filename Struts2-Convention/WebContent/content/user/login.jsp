@@ -8,7 +8,7 @@
 <title>µÇÂ¼Ò³Ãæ</title>
 </head>
 <body>
-	<s:form action="user/login" >
+	<s:form action="login" namespace="/user" >
 		<s:textfield name="username" key="ÓÃ»§Ãû" />
 		<s:textfield name="password" key="ÃÜÂë" />
 		<s:submit value="µÇÂ¼" />
