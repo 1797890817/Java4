@@ -37,6 +37,7 @@
 		<!-- <mapping class="com.ddb.hibernate.collection.list.Person"/> -->
 		<!-- <mapping class="com.ddb.hibernate.collection.array.Person"/> -->
 		<!-- <mapping class="com.ddb.hibernate.collection.set.Person"/> -->
-		<mapping class="com.ddb.hibernate.collection.map.Person"/>
+		<!-- <mapping class="com.ddb.hibernate.collection.map.Person"/> -->
+		<mapping class="com.ddb.hibernate.embeddable.Person"/>
 	</session-factory>
 </hibernate-configuration>
